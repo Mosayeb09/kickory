@@ -10,7 +10,7 @@ const categories = ["men","women","kids","accessories","shoes"]
 
 import React from 'react';
 
-export default async function search () {
+ async function search () {
     return (
         <div>
             <form action="/search" method="Get" className="flex items-stretch h-10">
@@ -35,7 +35,7 @@ export default async function search () {
            
             
             />
-            <button type="submit" className="bg-primary text-primary-foreground text-black rounded-s-none rounded-e-md h-full px-3 py-2">
+            <button type="submit" className="bg-primary text-primary-foreground  rounded-s-none rounded-e-md h-full px-3 py-2">
                 <SearchIcon className="h-6 w-6" />
             </button>
 
@@ -49,3 +49,4 @@ export default async function search () {
     );
 };
 
+export default search;
