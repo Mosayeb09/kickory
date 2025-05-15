@@ -84,16 +84,21 @@ export default function Header() {
             className="flex items-center header-button font-extrabold text-2xl m-1"
           >
             <Image
-              src="/icons/logo.svg" // ✅ Corrected path
+              src="/icons/logo_.png" // ✅ Corrected path
               alt={`${App_NAME} logo`}
               width={40}
               height={40}
             />
-            {App_NAME}
+            <div>
+              <h1 className="text-3xl font-bold ml-2">{App_NAME}</h1>
+              
+
+            </div>
+           
           </Link>
 
           {/* Search - visible only on md and up */}
-          <div className="hidden md:flex flex-1 max-w-xl mx-4">
+          <div className="hidden md:block flex-1 max-w-xl">
             <Search />
           </div>
 
@@ -102,7 +107,7 @@ export default function Header() {
         </div>
 
         {/* Search for small screens */}
-        <div className="md:hidden py-2">
+        <div className="md:hidden block py-2">
           <Search />
         </div>
 
