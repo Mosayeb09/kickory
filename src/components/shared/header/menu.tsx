@@ -3,23 +3,22 @@ import Link from "next/link";
 import { ShoppingCartIcon, UserIcon } from "lucide-react";
 
 const Menu = () => {
-    return (
-        <div className="flex justify-end">
-            <nav className="flex gap-4 w-full">
-            <Link href={"/sign-in"} className="header-button">
-            <UserIcon className="h-8 w-8"></UserIcon>
-            <span className="font-bold">Sign in</span>
-
-            
-            </Link>
-            <Link href={"/cart"} className="header-button">
+  return (
+    <div className="flex justify-end">
+      <nav className="flex gap-3 w-full">
+        <Link href={"/sign-in"} className="flex items-center header-button">
+          <UserIcon className="h-8 w-8"></UserIcon>
+          <span className="font-bold"> Hello, Sign in</span>
+        </Link>
+        <Link href={"/cart"} className="header-button">
+          <div className="flex items-end">
             <ShoppingCartIcon className="h-8 w-8"></ShoppingCartIcon>
             <span className="font-bold">Cart</span>
-          
-            </Link>
-            </nav>
-        </div>
-    );
+          </div>
+        </Link>
+      </nav>
+    </div>
+  );
 };
 
 export default Menu;

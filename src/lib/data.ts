@@ -32,6 +32,29 @@ const data = {
       name: 'Help',
       href: '/page/help',
     },
+  ],
+  carousels:[
+    {
+      title:"Most Popular Shoes For Sale",
+      buttonCaption:"Shop Now",
+      image:"/images/banner_1.png",
+      url:"search?category=shoes-popular",
+      ispublished:true,
+    },
+    {
+      title:"Most Demanded Shoes For Sale",
+      buttonCaption:"Shop Now",
+      image:"/images/banner_2.png",
+      url:"search?category=shoes-demanded",
+      ispublished:true,
+    },
+    {
+      title:"Most Hyped Shoes For Sale",
+      buttonCaption:"Shop Now",
+      image:"/images/banner_3.png",
+      url:"search?category=shoes-hyped",
+      ispublished:true,
+    },
   ]
 }
 export default data;
